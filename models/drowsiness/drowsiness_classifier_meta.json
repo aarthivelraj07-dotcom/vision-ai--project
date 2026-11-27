@@ -1,0 +1,401 @@
+{
+  "dataset_name": "MRL Eye Dataset (Media Research Lab)",
+  "dataset_size": 84898,
+  "awake_count": 42952,
+  "asleep_count": 41946,
+  "subjects_count": 37,
+  "split_method": "GroupKFold (5 splits across 37 subjects)",
+  "mean_train_accuracy": 0.9133,
+  "mean_val_accuracy": 0.763,
+  "std_val_accuracy": 0.0351,
+  "mean_val_precision": 0.7373,
+  "std_val_precision": 0.0898,
+  "mean_val_recall": 0.8126,
+  "std_val_recall": 0.0758,
+  "mean_val_f1": 0.7647,
+  "std_val_f1": 0.0363,
+  "overall_accuracy": 0.763,
+  "overall_precision": 0.7423,
+  "overall_recall": 0.7971,
+  "overall_f1": 0.7687,
+  "confusion_matrix": {
+    "TN_awake_as_awake": 31345,
+    "FP_awake_as_asleep": 11607,
+    "FN_asleep_as_awake": 8511,
+    "TP_asleep_as_asleep": 33435
+  },
+  "fold_metrics": [
+    {
+      "fold": 1,
+      "train_accuracy": 0.907,
+      "val_accuracy": 0.6993,
+      "val_precision": 0.8075,
+      "val_recall": 0.7468,
+      "val_f1": 0.776,
+      "confusion_matrix": [
+        [
+          3029,
+          2107
+        ],
+        [
+          2998,
+          8841
+        ]
+      ],
+      "val_subjects": [
+        "s0004",
+        "s0005",
+        "s0007",
+        "s0011",
+        "s0016",
+        "s0024",
+        "s0037"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_accuracy": 0.9166,
+      "val_accuracy": 0.8032,
+      "val_precision": 0.7463,
+      "val_recall": 0.8897,
+      "val_f1": 0.8117,
+      "confusion_matrix": [
+        [
+          6431,
+          2448
+        ],
+        [
+          893,
+          7201
+        ]
+      ],
+      "val_subjects": [
+        "s0001",
+        "s0002",
+        "s0014",
+        "s0017",
+        "s0020",
+        "s0034",
+        "s0035"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_accuracy": 0.9218,
+      "val_accuracy": 0.7608,
+      "val_precision": 0.8138,
+      "val_recall": 0.7282,
+      "val_f1": 0.7686,
+      "confusion_matrix": [
+        [
+          6140,
+          1535
+        ],
+        [
+          2504,
+          6707
+        ]
+      ],
+      "val_subjects": [
+        "s0006",
+        "s0009",
+        "s0012",
+        "s0013",
+        "s0021",
+        "s0025",
+        "s0027"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_accuracy": 0.917,
+      "val_accuracy": 0.7845,
+      "val_precision": 0.7523,
+      "val_recall": 0.7832,
+      "val_f1": 0.7674,
+      "confusion_matrix": [
+        [
+          7362,
+          2010
+        ],
+        [
+          1690,
+          6105
+        ]
+      ],
+      "val_subjects": [
+        "s0003",
+        "s0010",
+        "s0018",
+        "s0022",
+        "s0026",
+        "s0028",
+        "s0030",
+        "s0031",
+        "s0036"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_accuracy": 0.9042,
+      "val_accuracy": 0.7672,
+      "val_precision": 0.5664,
+      "val_recall": 0.9149,
+      "val_f1": 0.6997,
+      "confusion_matrix": [
+        [
+          8383,
+          3507
+        ],
+        [
+          426,
+          4581
+        ]
+      ],
+      "val_subjects": [
+        "s0008",
+        "s0015",
+        "s0019",
+        "s0023",
+        "s0029",
+        "s0032",
+        "s0033"
+      ]
+    }
+  ],
+  "per_subject_performance": {
+    "s0001": {
+      "total_samples": 3242,
+      "open_count": 1401,
+      "closed_count": 1841,
+      "accuracy": 0.5734
+    },
+    "s0002": {
+      "total_samples": 1114,
+      "open_count": 107,
+      "closed_count": 1007,
+      "accuracy": 0.9488
+    },
+    "s0003": {
+      "total_samples": 679,
+      "open_count": 120,
+      "closed_count": 559,
+      "accuracy": 0.8468
+    },
+    "s0004": {
+      "total_samples": 1069,
+      "open_count": 0,
+      "closed_count": 1069,
+      "accuracy": 0.9775
+    },
+    "s0005": {
+      "total_samples": 736,
+      "open_count": 28,
+      "closed_count": 708,
+      "accuracy": 0.9266
+    },
+    "s0006": {
+      "total_samples": 1012,
+      "open_count": 1,
+      "closed_count": 1011,
+      "accuracy": 0.2708
+    },
+    "s0007": {
+      "total_samples": 624,
+      "open_count": 11,
+      "closed_count": 613,
+      "accuracy": 0.9712
+    },
+    "s0008": {
+      "total_samples": 832,
+      "open_count": 0,
+      "closed_count": 832,
+      "accuracy": 0.9038
+    },
+    "s0009": {
+      "total_samples": 387,
+      "open_count": 24,
+      "closed_count": 363,
+      "accuracy": 0.9225
+    },
+    "s0010": {
+      "total_samples": 399,
+      "open_count": 68,
+      "closed_count": 331,
+      "accuracy": 0.8321
+    },
+    "s0011": {
+      "total_samples": 1648,
+      "open_count": 140,
+      "closed_count": 1508,
+      "accuracy": 0.9223
+    },
+    "s0012": {
+      "total_samples": 8728,
+      "open_count": 4230,
+      "closed_count": 4498,
+      "accuracy": 0.8097
+    },
+    "s0013": {
+      "total_samples": 3605,
+      "open_count": 630,
+      "closed_count": 2975,
+      "accuracy": 0.7087
+    },
+    "s0014": {
+      "total_samples": 8884,
+      "open_count": 5116,
+      "closed_count": 3768,
+      "accuracy": 0.8218
+    },
+    "s0015": {
+      "total_samples": 1132,
+      "open_count": 348,
+      "closed_count": 784,
+      "accuracy": 0.682
+    },
+    "s0016": {
+      "total_samples": 1889,
+      "open_count": 173,
+      "closed_count": 1716,
+      "accuracy": 0.8894
+    },
+    "s0017": {
+      "total_samples": 1648,
+      "open_count": 329,
+      "closed_count": 1319,
+      "accuracy": 0.8428
+    },
+    "s0018": {
+      "total_samples": 4410,
+      "open_count": 721,
+      "closed_count": 3689,
+      "accuracy": 0.7692
+    },
+    "s0019": {
+      "total_samples": 6175,
+      "open_count": 3268,
+      "closed_count": 2907,
+      "accuracy": 0.5019
+    },
+    "s0020": {
+      "total_samples": 704,
+      "open_count": 679,
+      "closed_count": 25,
+      "accuracy": 0.9474
+    },
+    "s0021": {
+      "total_samples": 987,
+      "open_count": 852,
+      "closed_count": 135,
+      "accuracy": 0.7275
+    },
+    "s0022": {
+      "total_samples": 382,
+      "open_count": 256,
+      "closed_count": 126,
+      "accuracy": 0.712
+    },
+    "s0023": {
+      "total_samples": 522,
+      "open_count": 467,
+      "closed_count": 55,
+      "accuracy": 0.887
+    },
+    "s0024": {
+      "total_samples": 752,
+      "open_count": 547,
+      "closed_count": 205,
+      "accuracy": 0.6436
+    },
+    "s0025": {
+      "total_samples": 1502,
+      "open_count": 1365,
+      "closed_count": 137,
+      "accuracy": 0.8908
+    },
+    "s0026": {
+      "total_samples": 1246,
+      "open_count": 837,
+      "closed_count": 409,
+      "accuracy": 0.7416
+    },
+    "s0027": {
+      "total_samples": 665,
+      "open_count": 573,
+      "closed_count": 92,
+      "accuracy": 0.809
+    },
+    "s0028": {
+      "total_samples": 736,
+      "open_count": 723,
+      "closed_count": 13,
+      "accuracy": 0.8546
+    },
+    "s0029": {
+      "total_samples": 1393,
+      "open_count": 1216,
+      "closed_count": 177,
+      "accuracy": 0.9017
+    },
+    "s0030": {
+      "total_samples": 1384,
+      "open_count": 1053,
+      "closed_count": 331,
+      "accuracy": 0.7493
+    },
+    "s0031": {
+      "total_samples": 1738,
+      "open_count": 1497,
+      "closed_count": 241,
+      "accuracy": 0.9241
+    },
+    "s0032": {
+      "total_samples": 6162,
+      "open_count": 6019,
+      "closed_count": 143,
+      "accuracy": 0.9815
+    },
+    "s0033": {
+      "total_samples": 681,
+      "open_count": 572,
+      "closed_count": 109,
+      "accuracy": 0.8429
+    },
+    "s0034": {
+      "total_samples": 739,
+      "open_count": 626,
+      "closed_count": 113,
+      "accuracy": 0.9797
+    },
+    "s0035": {
+      "total_samples": 642,
+      "open_count": 621,
+      "closed_count": 21,
+      "accuracy": 0.9891
+    },
+    "s0036": {
+      "total_samples": 6193,
+      "open_count": 4097,
+      "closed_count": 2096,
+      "accuracy": 0.7589
+    },
+    "s0037": {
+      "total_samples": 10257,
+      "open_count": 4237,
+      "closed_count": 6020,
+      "accuracy": 0.5706
+    }
+  },
+  "feature_importances": {
+    "EAR": 0.1646,
+    "norm_aperture": 0.1778,
+    "log_laplacian_var": 0.2034,
+    "sobel_h_energy": 0.0758,
+    "sobel_v_energy": 0.0832,
+    "contrast_ratio": 0.0925,
+    "intensity_std": 0.068,
+    "min_mean_ratio": 0.1346
+  },
+  "training_timestamp": "2026-11-18 16:14:50"
+}

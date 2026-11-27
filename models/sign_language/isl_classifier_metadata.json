@@ -1,0 +1,344 @@
+{
+  "model_name": "SVM_RBF",
+  "task": "Task 5: Indian Sign Language (ISL) Static Sign Recognition",
+  "status": "TRAINED_AND_VALIDATED",
+  "timestamp": "2026-11-19T16:05:00+05:30",
+  "environment": {
+    "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "sklearn_version": "1.9.0",
+    "numpy_version": "2.5.1",
+    "joblib_version": "1.5.3"
+  },
+  "dataset_scope": {
+    "manifest": "datasets/sign_language/features/feature_manifest.json",
+    "feature_file": "datasets/sign_language/features/extracted_features.npz",
+    "total_samples": 1896,
+    "feature_dimension": 63,
+    "classes": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "A",
+      "B",
+      "C",
+      "L",
+      "V",
+      "W",
+      "Y"
+    ],
+    "num_classes": 12,
+    "folds": 5
+  },
+  "pipeline_architecture": {
+    "steps": [
+      "scaler",
+      "clf"
+    ],
+    "scaler": "StandardScaler",
+    "classifier_type": "SVC",
+    "classifier_params": {
+      "C": "5.0",
+      "class_weight": "balanced",
+      "gamma": "scale",
+      "kernel": "rbf",
+      "probability": "True"
+    }
+  },
+  "evaluation_summary": {
+    "protocol": "Stratified 5-Fold Cross-Validation (Existing Manifest Folds)",
+    "mean_accuracy": 1.0,
+    "std_accuracy": 0.0,
+    "mean_macro_f1": 1.0,
+    "std_macro_f1": 0.0,
+    "mean_macro_precision": 1.0,
+    "std_macro_precision": 0.0,
+    "mean_macro_recall": 1.0,
+    "std_macro_recall": 0.0,
+    "fold_accuracies": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "fold_macro_f1s": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "class_wise_performance": {
+    "1": {
+      "support": 79.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "2": {
+      "support": 85.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "3": {
+      "support": 100.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "4": {
+      "support": 40.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "5": {
+      "support": 44.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "A": {
+      "support": 222.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "B": {
+      "support": 208.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "C": {
+      "support": 357.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "L": {
+      "support": 201.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "V": {
+      "support": 275.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "W": {
+      "support": 146.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "Y": {
+      "support": 139.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      79,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      85,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      100,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      40,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      44,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      222,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      208,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      357,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      201,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      275,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      146,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      139
+    ]
+  ],
+  "all_experiment_results": {
+    "SVM_RBF": {
+      "mean_accuracy": 1.0,
+      "std_accuracy": 0.0,
+      "mean_macro_f1": 1.0,
+      "std_macro_f1": 0.0
+    },
+    "RandomForest": {
+      "mean_accuracy": 1.0,
+      "std_accuracy": 0.0,
+      "mean_macro_f1": 1.0,
+      "std_macro_f1": 0.0
+    },
+    "ExtraTrees": {
+      "mean_accuracy": 1.0,
+      "std_accuracy": 0.0,
+      "mean_macro_f1": 1.0,
+      "std_macro_f1": 0.0
+    },
+    "KNN": {
+      "mean_accuracy": 0.9989431949854113,
+      "std_accuracy": 0.0012943184038844745,
+      "mean_macro_f1": 0.9993585923087839,
+      "std_macro_f1": 0.0007855607802880933
+    }
+  }
+}

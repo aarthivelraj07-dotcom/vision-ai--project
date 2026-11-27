@@ -1,0 +1,21 @@
+{
+  "model_name": "Task 3 Biometric Age Estimator",
+  "architecture": "RandomForestRegressor (60 trees, max_depth=8) on SFace (128-D) + Craniofacial/Texture Biometrics (8-D)",
+  "input_feature_dim": 136,
+  "training_samples": 44,
+  "cross_val_mae_years": 4.79,
+  "training_mae_years": 1.52,
+  "training_r2": 0.9288,
+  "license": "Apache-2.0 / Academic Research Use",
+  "source_components": [
+    "OpenCV YuNet Face Detector (Apache 2.0)",
+    "OpenCV SFace Deep Feature Extractor (Apache 2.0)",
+    "Scikit-Learn Random Forest Regression"
+  ],
+  "limitations": [
+    "Automated heuristic estimation based on craniofacial geometry and facial feature embeddings.",
+    "Expected error margin is approximately +/- 4 to 6 years.",
+    "Extreme lighting, severe facial angles (>45 deg), or occlusions (masks/sunglasses) increase uncertainty.",
+    "Must be presented to users with clear uncertainty brackets (e.g., '25 +/- 5 yrs')."
+  ]
+}
