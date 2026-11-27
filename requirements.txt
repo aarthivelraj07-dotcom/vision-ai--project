@@ -1,0 +1,11 @@
+# Runtime dependencies; versions match the inspected Python 3.13.14 environment.
+streamlit==1.61.1
+opencv-python==4.14.0.94
+numpy==2.5.1
+Pillow==12.3.0
+pandas==3.0.5
+joblib==1.5.3
+scikit-learn==1.9.0
+keras==3.15.1
+tensorflow==2.21.0
+openpyxl==3.1.5

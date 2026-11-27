@@ -1,0 +1,65 @@
+# Datasets and local data
+datasets/
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.sqlite-journal
+*.sqlite3-journal
+*.db-wal
+*.sqlite-wal
+*.sqlite3-wal
+*.db-shm
+*.sqlite-shm
+*.sqlite3-shm
+
+# Biometric captures and generated attendance exports
+**/registered_faces/
+**/face_data/
+**/face_embeddings/
+**/biometric_data/
+**/biometrics/
+**/test_faces/
+**/attendance_exports/
+**/attendance_export/
+**/attendance_export*.csv
+**/attendance_export*.xlsx
+**/attendance_report*.csv
+**/attendance_report*.xlsx
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+.streamlit/credentials.toml
+**/credentials.toml
+**/secrets.toml
+**/credentials.json
+*.pem
+*.p12
+*.pfx
+*.key
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Local runtime, scratch, and generated exports
+.keras/
+scratch/
+exports/
+
+# Temporary files and logs
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.log
+logs/
